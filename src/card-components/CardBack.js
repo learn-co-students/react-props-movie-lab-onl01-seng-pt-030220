@@ -12,12 +12,15 @@ export default class CardBack extends Component {
 
   generateRatingElement = () => {
     // implement meeeee! See the readme for instructions
+    
   }
 
   render() {
     return (
       <div className="card-back">
         <h3 className="title"></h3>
+        <h4>"No Rating Found", "Rolling in the Deep"</h4>
+
         <span />
         { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
         <span />
