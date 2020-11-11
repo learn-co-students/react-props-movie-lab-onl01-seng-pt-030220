@@ -18,8 +18,11 @@ export default class CardBack extends Component {
   render() {
     return (
       <div className="card-back">
-        <h3 className="title"></h3>
-        <h4>"No Rating Found", "Rolling in the Deep"</h4>
+        <h3 className="title">
+          {this.props.title}
+          {this.props.IMDBRating}
+          {this.props.genres}
+        </h3>
 
         <span />
         { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
