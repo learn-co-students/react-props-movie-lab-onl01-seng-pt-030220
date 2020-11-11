@@ -12,7 +12,7 @@ export default class CardBack extends Component {
 
   generateRatingElement = () => {
     // implement meeeee! See the readme for instructions
-    
+
   }
 
   render() {
@@ -20,14 +20,17 @@ export default class CardBack extends Component {
       <div className="card-back">
         <h3 className="title">
           {this.props.title}
-          {this.props.IMDBRating}
-          {this.props.genres}
         </h3>
 
         <span />
         { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
+        {this.props.IMDBRating}
+        {/* <h4>No Rating Found</h4> */}
+
         <span />
-        <h5 className="genres"></h5>
+        <h5 className="genres">
+          {this.props.genres}
+        </h5>
       </div>
     )
   }
